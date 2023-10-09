@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), WeatherView {
         presenter.attachView(this)
         presenter.getWeather()
         Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
+        //push
     }
 
     override fun showWeather(model: WeatherModel) {
