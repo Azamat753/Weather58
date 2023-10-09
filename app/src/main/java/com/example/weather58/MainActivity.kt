@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(), WeatherView {
         setContentView(binding.root)
         presenter.attachView(this)
         presenter.getWeather()
+        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
     }
 
     override fun showWeather(model: WeatherModel) {
